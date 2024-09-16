@@ -5,6 +5,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* Navbar */
 .navbar {
@@ -72,7 +75,7 @@ body {
 }
 
 .hero-title {
-    font-size: 3rem; /* text-5xl */
+    font-size: calc(10px + 2.80625vw);
     font-weight: bold;
     color: black;
     overflow: hidden;
