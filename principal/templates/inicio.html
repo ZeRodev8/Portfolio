@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Álvaro Gil - Fullstack Developer{% endblock %}</title>
+    <meta name="description"
+        content="{% block description %}Consigue los mejores recursos gratuitos y de pago para aprobar Gestión Administrativa Civil del Estado. ¡Entérate de todas las novedades de tu oposición aquí!{% endblock %}">
+    <!-- CSS -->
+    <!-- <link rel="icon" href="{% static 'img/logopestaña.webp' %}" type="image/x-icon"> -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="container">
+            <a href="#" class="logo">Mi Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Hola, soy Álvaro, fullstack developer.</h1>
+        </div>
+    </div>
+
+    <!-- Sobre mí -->
+    <section id="about" class="about-section">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy Álvaro, un desarrollador apasionado por el desarrollo web. Aquí es donde puedes contar un poco más sobre tu experiencia y habilidades.</p>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="projects-section">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+            <!-- Ejemplo de Proyecto -->
+            <div class="project-card">
+                <h3>Nombre del Proyecto</h3>
+                <p>Descripción breve del proyecto. Utiliza este espacio para hablar sobre los aspectos más destacados del proyecto.</p>
+            </div>
+            <!-- Agrega más proyectos aquí -->
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact-section">
+        <h2>Contacto</h2>
+        <form action="#" method="POST">
+            <label for="name">
+                Nombre
+                <input type="text" id="name" name="name" required>
+            </label>
+            <label for="email">
+                Correo Electrónico
+                <input type="email" id="email" name="email" required>
+            </label>
+            <label for="message">
+                Mensaje
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Mi Portfolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="{% static 'main.js' %}" type="module"></script>
+</body>
+
+</html>
