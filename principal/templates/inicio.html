@@ -12,32 +12,46 @@
     <!-- CSS -->
     <!-- <link rel="icon" href="{% static 'img/logopestaña.webp' %}" type="image/x-icon"> -->
     <link rel="stylesheet" href="{% static 'styles.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 
 <body>
     <header class="navbar">
         <nav class="container">
-            <a href="#" class="logo">Mi Portfolio</a>
+            <a href="#" class="logo">zerodev</a>
             <ul class="nav-links">
                 <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
+            <svg id="light-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="28" height="28" style="cursor: pointer;">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+            <svg id="dark-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="28" height="28" style="cursor: pointer;">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+            </svg>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <div class="hero-section">
         <div class="hero-content">
-            <h1 class="hero-title">Hola, soy Álvaro, fullstack developer.</h1>
+            <h1 class="hero-title line1">Hola, soy Álvaro,</h1>
+            <h1 class="hero-title line2">fullstack developer.</h1>
+        </div>
+        
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+                <source src="{% static 'media/backgroundvid.mp4' %}" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
         </div>
     </div>
 
     <!-- Sobre mí -->
     <section id="about" class="about-section">
         <h2>Sobre mí</h2>
-        <p>Hola, soy Álvaro, un desarrollador apasionado por el desarrollo web. Aquí es donde puedes contar un poco más sobre tu experiencia y habilidades.</p>
+        <p>Hola, soy Álvaro, un desarrollador apasionado por el desarrollo web. Aquí es donde puedes contar un poco más
+            sobre tu experiencia y habilidades.</p>
     </section>
 
     <!-- Proyectos -->
@@ -47,35 +61,16 @@
             <!-- Ejemplo de Proyecto -->
             <div class="project-card">
                 <h3>Nombre del Proyecto</h3>
-                <p>Descripción breve del proyecto. Utiliza este espacio para hablar sobre los aspectos más destacados del proyecto.</p>
+                <p>Descripción breve del proyecto. Utiliza este espacio para hablar sobre los aspectos más destacados
+                    del proyecto.</p>
             </div>
             <!-- Agrega más proyectos aquí -->
         </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contact" class="contact-section">
-        <h2>Contacto</h2>
-        <form action="#" method="POST">
-            <label for="name">
-                Nombre
-                <input type="text" id="name" name="name" required>
-            </label>
-            <label for="email">
-                Correo Electrónico
-                <input type="email" id="email" name="email" required>
-            </label>
-            <label for="message">
-                Mensaje
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </label>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Mi Portfolio. Todos los derechos reservados.</p>
+        <p>&copy; 2024 ZeRodev. Todos los derechos reservados.</p>
     </footer>
 
     <script src="{% static 'main.js' %}" type="module"></script>
